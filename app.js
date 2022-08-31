@@ -22,5 +22,11 @@ function submit(){
 
 function display(opinion){
     document.querySelector("#rating-given").innerHTML = opinion;
+    const buttons = Array.from(document.querySelectorAll(".butt"));
+    buttons.forEach( (el) => {
+        el.classList.remove("chosen");
+    });
+
+    document.querySelector("#button"+opinion).classList.add("chosen");
 }
 

@@ -59,13 +59,22 @@ main{
 
 .butt{
     display: flex;
-    min-width: 50px;
-    min-height: 50px;
+    min-width: 40px;
+    min-height: 40px;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
     background-color: hsl(217, 12%, 63%);
     color: black;
+}
+
+.butt:hover{
+    background-color: orange;
+    cursor: pointer;
+}
+
+.butt:active{
+    background-color: white;
 }
 
 #submit{
@@ -77,6 +86,12 @@ main{
     background-color: hsl(25, 97%, 53%);
     color: white;
     text-transform: uppercase;
+}
+
+#submit:hover{
+    color: orange;
+    background-color: white;
+    cursor: pointer;
 }
 
 .work{
@@ -102,4 +117,14 @@ main{
 
 .about{
     text-align: center;
+}
+
+.chosen{
+    background-color: white;
+}
+
+@media only screen and (max-width: 400px){
+    .container{
+        width: 80%;
+    }
 }
