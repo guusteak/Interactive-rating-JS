@@ -13,26 +13,28 @@
 </head>
 <body>
   <div class="container">
-    <header>
-      <img src="images/icon-star.svg">
-      <h1>How did we do?</h1>
-    </header>
-    <main>
-      <p>Please let us know how we did with your support request. All feedback is appreciated 
-        to help us improve our offering!
-      </p>
-      <div class="rating">
-        <p class="butt" id="button1">1</p>
-        <p class="butt" id="button2">2</p>
-        <p class="butt" id="button3">3</p>
-        <p class="butt" id="button4">4</p>
-        <p class="butt" id="button5">5</p>
-      </div>
-      <div id="submit">
-        Submit
-      </div>
-    </main>
-  </div>
+    <div id="main-display" class="">
+      <header>
+        <img src="images/icon-star.svg">
+        <h1>How did we do?</h1>
+      </header>
+      <main>
+        <p>Please let us know how we did with your support request. All feedback is appreciated 
+          to help us improve our offering!
+        </p>
+        <div class="rating">
+          <p class="butt" id="button1">1</p>
+          <p class="butt" id="button2">2</p>
+          <p class="butt" id="button3">3</p>
+          <p class="butt" id="button4">4</p>
+          <p class="butt" id="button5">5</p>
+        </div>
+        <div id="submit">
+          Submit
+        </div>
+      </main>
+    </div>
+  
 
   <!-- Rating state start -->
 
@@ -41,14 +43,21 @@
   <!-- Rating state end -->
 
   <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
+<div id="submit-display"class="none">
+  <header class="work">
+    <img src="images/illustration-thank-you.svg" alt="illustration">
+  </header>
+  <main>
+    <p class="center">You selected <span id="rating-given"></span> out of 5</p>
+    <span class="span">Thank you!</span>
+  
+    <p class="about">
+      We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!
+    </p>
+  </main>
 
   <!-- Thank you state end -->
+</div></div>
 </body>
 </html>
